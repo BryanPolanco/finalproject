@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: "HelveticaNeue-Thin.otf"
+}
+#drop {
+  font-weight: bold;
+  font-size: 25pt;
+  color: black;
+  padding-top: 1.9%;
+  padding-left: 13%;
+  float:left;
+}
+.header ul li{
+    padding-top:2.7%;
+    list-style:none;
+    float:right;
+    margin-right: 5%;
+    font-family: Helvetica Neue;
+    font-size: 15pt;
+    font-weight: 100;
+    color: Black;
+}
+.header{
+    width:100%;
+    height:15%;
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: white;
+
+}
