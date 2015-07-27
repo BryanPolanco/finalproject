@@ -3,22 +3,27 @@
   src: "HelveticaNeue-Thin.otf"
 }
 #drop {
-  font-weight: bold;
   font-size: 25pt;
   color: black;
   padding-top: 1.9%;
   padding-left: 13%;
   float:left;
+  letter-spacing: 20px;
+  position: absolute;
 }
 .header ul li{
-    padding-top:2.7%;
+    padding-top:2.6%;
     list-style:none;
     float:right;
     margin-right: 5%;
     font-family: Helvetica Neue;
     font-size: 15pt;
-    font-weight: 100;
-    color: Black;
+    font-weight: bold;
+    color: grey;
+    letter-spacing: 2px;
+}
+#about{
+margin-right: 15%;
 }
 .header{
     width:100%;
@@ -29,4 +34,32 @@
     left:0;
     background-color: white;
 
+}
+#teardrop {
+  height: 5.2%;
+  width: 2.5%;
+  padding-top: .75%;
+  padding-left: 10%;
+  position: fixed;
+  z-index: 100;
+}
+.welcome{
+  margin-top: 19%;
+  font-family: Helvetica Neue;
+  font-size: 40px;
+  padding-left: 40.5%;
+  color: black;
+  font-weight:100;
+  position: absolute;
+  z-index: 1;
+
+}
+#everything {
+  margin-left: -16px;
+}
+#water{
+  width: 101%;
+  position: absolute;
+  z-index: 0;
+  margin-top: 20px;
 }
