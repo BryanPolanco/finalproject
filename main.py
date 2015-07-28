@@ -20,7 +20,7 @@ import os
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja2_environment.get_template('templates/drop.html')
+        template = jinja2_environment.get_template('Templates/drop.html')
         self.response.write(template.render())
 
 jinja2_environment = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
