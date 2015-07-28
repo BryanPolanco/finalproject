@@ -5,61 +5,69 @@
 #drop {
   font-size: 25pt;
   color: black;
-  padding-top: 1.9%;
-  padding-left: 13%;
+  font-family: Helvetica Neue;
+  padding-top: 2.25%;
+  font-style: bold;
   float:left;
-  letter-spacing: 20px;
-  position: absolute;
+  letter-spacing: 5px;
 }
-.header ul li{
-    padding-top:2.6%;
-    list-style:none;
-    float:right;
-    margin-right: 5%;
-    font-family: Helvetica Neue;
-    font-size: 15pt;
-    font-weight: bold;
-    color: grey;
-    letter-spacing: 2px;
-}
-#about{
+/*#info{
+  font-size: 50px;
+}*/
+/*#about{
 margin-right: 15%;
-}
-.header{
-    width:100%;
-    height:15%;
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    background-color: white;
-
-}
-#teardrop {
-  height: 5.2%;
-  width: 2.5%;
-  padding-top: 2%;
-  padding-left: 10%;
+}*/
+#navBar{
+  overflow: auto;
+  width: 101.5%;
+  margin-bottom: 0px;
+  height: 120px;
+  background-color: white;
   position: fixed;
-  z-index: 100;
+}
+.navTab{
+  width: 14.145%;
+  height: 100%;
+  float:left;
+  overflow: auto;
+  font-family: Helvetica Neue;
+  font-size: 15pt;
+  color: grey;
+  padding-top: 3%;
+}
+#teardrop img {
+  position: absolute;
+  height: 35px;
+  left: 160px;
+  top: 32px;
 }
 .welcome{
-  margin-top: 21%;
   font-family: Helvetica Neue;
   font-size: 40px;
-  padding-left: 40.5%;
   color: black;
   font-weight:100;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
+  top: 35%;
+  left: 41%;
+  /*margin: 0 auto;
+  display: inline-block;*/
+}
+.page{
+  height: 100%;
+  overflow:auto;
+  margin: -10px;
+}
+/*.welcomeWrapper {
+  text-align: center;
+}*/
 
-}
-#everything {
+/*#everything {
   margin-left: -16px;
-}
+}*/
 #water{
   width: 101%;
-  position: absolute;
-  z-index: 0;
-  margin-top: 20px;
+  height: 850px;
+  /*position: absolute;
+  z-index: 0;*/
 }
