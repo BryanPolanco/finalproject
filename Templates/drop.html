@@ -35,7 +35,8 @@
   Let me give you some background,
 </div>
 <div id = "paragraph">
-   Drop was a mere concept that that had been in development for the past 20 years, and now, the developers at Triple EPIC are proud to present the unveiling of the latest multi-use social media site. Together, Triple EPIC was able to create the groundbreaking website of Drop. After many years of adversity, obstacles, and challenges, Drop is now avaliable to the public. The developers say that it wasn't easy, but that they are proud of the outcome. Overall, the company is still famous for the slogan that they base all of their work off of. The ocean was created, with the start of a single drop.
+   Drop was a mere concept that that had been in development for the past 20 years,
+   and now, the developers at Triple EPIC are proud to present the unveiling of the latest multi-use social media site. Together, Triple EPIC was able to create the groundbreaking website of Drop. After many years of adversity, obstacles, and challenges, Drop is now avaliable to the public. The developers say that it wasn't easy, but that they are proud of the outcome. Overall, the company is still famous for the slogan that they base all of their work off of. The ocean was created, with the start of a single drop.
  </div>
 <a class="twitter-timeline"
   href="https://twitter.com/Ambuerrs_J/lists/popular-users"
@@ -45,7 +46,9 @@
     js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
     (document,"script","twitter-wjs");</script>
 <p>
-  <img src="{{ picture }}">
+  {% for picture in link %}
+    <img src="{{ picture }}">
+  {% endfor %}
 </p>
 
 </body> 
