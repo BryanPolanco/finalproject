@@ -8,66 +8,58 @@
   font-family: Helvetica Neue;
   padding-top: 2.25%;
   font-style: bold;
-  float:left;
+  padding-right: 10.25%;
   letter-spacing: 5px;
 }
-/*#info{
-  font-size: 50px;
-}*/
-/*#about{
-margin-right: 15%;
-}*/
 #navBar{
+  /*border: 1px solid green;*/
   overflow: auto;
   width: 101.5%;
   margin-bottom: 0px;
   height: 120px;
   background-color: white;
   position: fixed;
+  z-index: 100;
 }
 .navTab{
-  width: 14.145%;
+  /*border: 1px solid red;*/
+  width: 10%;
   height: 100%;
-  float:left;
+  float:right;
   overflow: auto;
   font-family: Helvetica Neue;
   font-size: 15pt;
   color: grey;
   padding-top: 3%;
+  padding-left: 5px;
 }
 #teardrop img {
+  /*border: 1px solid blue;*/
   position: absolute;
   height: 35px;
-  left: 160px;
-  top: 32px;
+  left: 200px;
+  top: 35px;
 }
 .welcome{
+  /*border: 1px solid purple;*/
   font-family: Helvetica Neue;
   font-size: 40px;
   color: black;
   font-weight:100;
   position: absolute;
-  z-index: 0;
+  z-index: ;
   top: 35%;
   left: 41%;
-  /*margin: 0 auto;
-  display: inline-block;*/
 }
 .page{
   height: 100%;
   overflow:auto;
   margin: -10px;
 }
-/*.welcomeWrapper {
-  text-align: center;
-}*/
-
-/*#everything {
-  margin-left: -16px;
-}*/
 #water{
   width: 101%;
   height: 850px;
-  /*position: absolute;
-  z-index: 0;*/
+}
+#info{
+  font-size: 50px;
 }
