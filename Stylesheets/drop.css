@@ -38,13 +38,13 @@ margin-right: 15%;
 #teardrop {
   height: 5.2%;
   width: 2.5%;
-  padding-top: .75%;
+  padding-top: 2%;
   padding-left: 10%;
   position: fixed;
   z-index: 100;
 }
 .welcome{
-  margin-top: 19%;
+  margin-top: 21%;
   font-family: Helvetica Neue;
   font-size: 40px;
   padding-left: 40.5%;
