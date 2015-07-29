@@ -117,8 +117,27 @@
   font-size: 40pt;
   text-align: center;
 }
-#amber{
+/*#amber{
   border: 1px solid grey;
+}*/
+.allbios{
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.allbios > div {
+  display: inline-block;
+}
+.bryan{
+  /*border: 1px solid blue;*/
+  width: 31%;
+}
+.amber{
+  width: 31%;
+  /*border: 1px solid blue;*/
+}
+.shuying{
+  width: 30%;
+  /*border: 1px solid blue;*/
 }
 .devpics img{
   height: 200px;
@@ -130,8 +149,6 @@
 }
 .developernames{
   /*border: 1px solid blue;*/
-  float: left;
-  width:33.2%;
   font-family: Helvetica Neue;
   font-size: 20px;
   font-weight: bold;
@@ -145,6 +162,7 @@
   font-size: 13pt;
   line-height: 30px;
   letter-spacing: 2px;
+  text-align: center;
 }
 a:link {
     text-decoration: none;
