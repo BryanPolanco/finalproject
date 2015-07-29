@@ -24,7 +24,8 @@ from apiclient.discovery import build
 from optparse import OptionParser
 import logging
 import random
-
+import urllib2
+import json
 
 
 DEVELOPER_KEY = "AIzaSyAK_0glv6MteAUDzFCa9vd8q0d6ETePcw0"
@@ -52,23 +53,13 @@ class MainHandler(webapp2.RequestHandler):
 
         template_values = {'video': video}
         self.response.headers['Content-type'] = 'text/html'
-        template = JINJA_ENVIRONMENT.get_template('Templates/drop.html')
+        template = jinja2_environment.get_template('Templates/drop.html')
         self.response.write(template.render(template_values))
 
 
-
-import urllib2
-import json
-import logging
-
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
-        template = jinja2_environment.get_template('Templates/drop.html')
-        self.response.write(template.render())
-
 class InstaHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja2_environment.get_template('Templates/drop.html')
+        template = jinja2_environment.get_template('instagram.html')
         counter = 2
         url = ('https://api.instagram.com/v1/users/self/media/recent?'
             'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b&count=%s' %(counter))
@@ -87,9 +78,6 @@ class InstaHandler(webapp2.RequestHandler):
 
 jinja2_environment = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
-JINJA_ENVIRONMENT = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
-    extensions=['jinja2.ext.autoescape'])
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
 
