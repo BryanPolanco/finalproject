@@ -9,7 +9,7 @@ handlers:
   static_files: TearDrop2.png
   upload: favicon\.icon
 
-- url: /stylesheets
+- url: /Stylesheets
   static_dir: Stylesheets
 
 - url: /images

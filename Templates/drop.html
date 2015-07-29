@@ -3,7 +3,7 @@
 <head> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src= "https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<link rel="stylesheet" type="text/css"href="stylesheets/drop.css">
+<link rel="Stylesheets" type="text/css"href="stylesheets/drop.css">
 <!-- <script src="/javascript/AboutMe.js" ></script> -->
 <title>Drop</title> 
 </head> 
@@ -27,6 +27,24 @@
     </div>
     </div>
 </div> 
+
+
+<div id="buttons">
+  <form action = "/" method = "GET">
+    <input name = "query" placeholder ='keyword' type="text"/>
+    <input id="search" type = "submit" value = "search">
+    </form>
+</div>
+
+<div id="results">
+  {% include 'Templates/video.html' %}
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+
 <p id= "info">Warmest climes but nurse the cruellest fangs: the tiger of Bengal crouches in spiced groves of ceaseless verdure. Skies the most effulgent but basket the deadliest thunders: gorgeous Cuba knows tornadoes that never swept tame northern lands. So, too, it is, that in these resplendent Japanese seas the mariner encounters the direst of all storms, the Typhoon. It will sometimes burst from out that cloudless sky, like an exploding bomb upon a dazed and sleepy town.
 Towards evening of that day, the Pequod was torn of her canvas, and bare-poled was left to fight a Typhoon which had struck her directly ahead. When darkness came on, sky and sea roared and split with the thunder, and blazed with the lightning, that showed the disabled masts fluttering here and there with the rags which the first fury of the tempest had left for its after sport.
 Holding by a shroud, Starbuck was standing on the quarter-deck; at every flash of the lightning glancing aloft, to see what additional disaster might have befallen the intricate hamper there; while Stubb and Flask were directing the men in the higher hoisting and firmer lashing of the boats. But all their pains seemed naught. Though lifted to the very top of the cranes, the windward quarter boat (Ahab's) did not escape. A great rolling sea, dashing high up against the reeling ship's high teetering side, stove in the boat's bottom at the stern, and left it again, all dripping through like a sieve.
