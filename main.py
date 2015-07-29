@@ -51,20 +51,11 @@ class MainHandler(webapp2.RequestHandler):
         randomindex = random.randint(0,len(videos)-1)
         video = videos[randomindex]
 
-        template_values = {'video': video}
-        self.response.headers['Content-type'] = 'text/html'
-        template = jinja2_environment.get_template('Templates/drop.html')
-        self.response.write(template.render(template_values))
-
-
-class InstaHandler(webapp2.RequestHandler):
-    def get(self):
-        template = jinja2_environment.get_template('instagram.html')
         counter = 2
         url = ('https://api.instagram.com/v1/users/self/media/recent?'
-            'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b&count=%s' %(counter))
-        collection = [ ]
-        x=0
+                'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b&count=%s' %(counter))
+        collection = []
+        x = 0
         for i in range(counter):
             logging.info("HEHEHHEHEHHEHE")
             string = urllib2.urlopen(url)
@@ -73,13 +64,37 @@ class InstaHandler(webapp2.RequestHandler):
             collection += [picture]
             x += 1
         logging.info(collection)
-        template_vars = {'collection':collection}
-        self.response.write(template.render(template_vars))
 
-jinja2_environment = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
+        template_values = {'video': video, 'collection': collection}
+        self.response.headers['Content-type'] = 'text/html'
+        template = JINJA_ENVIRONMENT.get_template('Templates/drop.html')
+        self.response.write(template.render(template_values))
+
+
+# class InstaHandler(webapp2.RequestHandler):
+#     def get(self):
+#         template = JINJA_ENVIRONMENT.get_template('Templates/drop.html')
+#         counter = 2
+#         url = ('https://api.instagram.com/v1/users/self/media/recent?'
+#             'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b&count=%s' %(counter))
+#         collection = [ ]
+#         x=0
+#         for i in range(counter):
+#             logging.info("HEHEHHEHEHHEHE")
+#             string = urllib2.urlopen(url)
+#             bigdictionary = json.loads(string.read())
+#             picture = bigdictionary['data'][x]['link']
+#             collection += [picture]
+#             x += 1
+#         logging.info(collection)
+#         template_vars = {'collection':collection}
+#         self.response.write(template.render(template_vars))
+
+JINJA_ENVIRONMENT = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'])
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-
-    ('/insta', InstaHandler)
+    # ('/insta', InstaHandler)
 ], debug=True)
