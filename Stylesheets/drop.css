@@ -157,3 +157,9 @@ a:visited {
   color:inherit;
   text-decoration: none;
 }
+#instagram_holder{
+  height: 600px;
+    width: 33%%;
+    margin: 8%;
+    overflow: auto;
+}
