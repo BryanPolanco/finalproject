@@ -50,12 +50,11 @@ class MainHandler(webapp2.RequestHandler):
             videos.append(search_result)
         randomindex = random.randint(0,len(videos)-1)
         video = videos[randomindex]
-
-        counter = 2
-        url = ('https://api.instagram.com/v1/users/self/media/recent?'
-                'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b&count=%s' %(counter))
-        collection = []
-        x = 0
+        counter = 4
+        url = ('https://api.instagram.com/v1/media/popular?'
+            'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b')
+        collection = [ ]
+        x=0
         for i in range(counter):
             logging.info("HEHEHHEHEHHEHE")
             string = urllib2.urlopen(url)
