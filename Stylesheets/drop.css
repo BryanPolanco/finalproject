@@ -87,7 +87,7 @@
   height: 100px;
 }
 .timeline{
-  text-align: center;
+  width: 400px;
 }
 #twitter{
   height: 75px;
@@ -146,9 +146,6 @@
   line-height: 30px;
   letter-spacing: 2px;
 }
-
-
-
 a:link {
     text-decoration: none;
     color:inherit;
@@ -159,7 +156,17 @@ a:visited {
 }
 #instagram_holder{
   height: 600px;
-    width: 33%%;
+    width: 400px;
     margin: 8%;
     overflow: auto;
+}
+#results{
+  height: 600px;
+  width: 400px;
+  margin: 8%;
+  overflow: auto;
+}
+
+#social_media_lines > div{
+  display: inline-block;
 }
