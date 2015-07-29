@@ -60,11 +60,15 @@ class MainHandler(webapp2.RequestHandler):
         ).execute()
 
         videos = []
-
+        video_collection = []
+        video_count = 3
         for search_result in search_response.get("items", []):
             videos.append(search_result)
-        randomindex = random.randint(0,len(videos)-1)
-        video = videos[randomindex]
+        for vid in range(video_count):
+            randomindex = random.randint(0,len(videos)-1)
+            cool_video = videos[randomindex]
+            video_collection += [cool_video]
+        #now is instagram
         counter = 4
         url = ('https://api.instagram.com/v1/media/popular?'
             'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b')
@@ -78,8 +82,8 @@ class MainHandler(webapp2.RequestHandler):
             x += 1
         logging.info(collection)
 
-        template_values = {'video': video, 'collection': collection}
-        # self.response.headers['Content-type'] = 'text/html'
+        template_values = {'video_collection': video_collection, 'collection': collection}
+        self.response.headers['Content-type'] = 'text/html'
         template = JINJA_ENVIRONMENT.get_template('Templates/drop.html')
         self.response.write(template.render(template_values))
 

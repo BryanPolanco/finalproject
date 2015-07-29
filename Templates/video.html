@@ -1,3 +1,7 @@
-<iframe id="ytplayer" type="text/html" width="640" height="390"
-    src="http://www.youtube.com/embed/{{ video.id.videoId }}?autoplay=0" frameborder="0">
-</iframe>
+<div>
+  {% for cool_video in video_collection %}
+  <iframe id="ytplayer" type="text/html" width="400" height="300"
+      src="http://www.youtube.com/embed/{{ cool_video.id.videoId }}?autoplay=0" frameborder="0">
+  </iframe>
+  {% endfor %}
+</div>

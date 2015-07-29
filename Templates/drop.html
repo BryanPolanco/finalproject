@@ -33,16 +33,23 @@
     </div>
   </div>
 </div> 
-</br>
-<div id="buttons">
-  <form action = "/" method = "GET">
-    <input name = "query" placeholder ='keyword' type="text"/>
-    <input id="search" type = "submit" value = "search"/>
-  </form>
-</div>
-</br>
 <div id="results">
-  {% include 'Templates/video.html' %}
+  </br>
+  <div id="buttons">
+    <form action = "/" method = "GET">
+      <input name = "query" placeholder ='keyword' type="text"/>
+      <input id="search" type = "submit" value = "search"/>
+    </form>
+  </div>
+  </br>
+  <div>
+    {% for cool_video in video_collection %}
+    <iframe id="ytplayer" type="text/html" width="400" height="300"
+        src="https://www.youtube.com/embed/{{ cool_video.id.videoId }}?autoplay=0" frameborder="0">
+    </iframe>
+    {% endfor %}
+  </div>
+
 </div>
 <div id = 'info'>
 </div>
@@ -52,6 +59,45 @@
 <div id = "paragraph">
    Drop was a mere concept that that had been in development for the past 20 years,
    and now, the developers at Triple EPIC are proud to present the unveiling of the latest multi-use social media site. Together, Triple EPIC was able to create the groundbreaking website of Drop. After many years of adversity, obstacles, and challenges, Drop is now avaliable to the public. The developers say that it wasn't easy, but that they are proud of the outcome. Overall, the company is still famous for the slogan that they base all of their work off of. The ocean was created, with the start of a single drop.
+ </div>
+ <div id = 'experience'>
+ </div>
+ <div id = "social_media_lines">
+  <div class = 'timeline'>
+    <a class="twitter-timeline"
+      href="https://twitter.com/Ambuerrs_J/lists/popular-users"
+      data-widget-id="626074924570931200">Tweets from https://twitter.com/Ambuerrs_J/lists/popular-users</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+      p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
+        js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
+        (document,"script","twitter-wjs");</script>
+  </div>
+  <div id="instagram_holder">
+    <div>
+      {% for picture in collection %}
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4"
+        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+        margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+        <div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;">
+          <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC);
+          display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;">
+             <a href="{{ picture }}" style=" color:#000;
+             font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;
+             text-decoration:none; word-wrap:break-word;" target="_top">💐 in our hearts, 💐 in our boots. #freepeople</a></p> <p style="
+             color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0;
+             margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center;
+             text-overflow:ellipsis; white-space:nowrap;">A photo posted by freepeople (@freepeople) on <time style=" font-family:Arial,sans-serif;
+             font-size:14px; line-height:17px;" datetime="2015-07-28T23:17:47+00:00">Jul 28, 2015 at 4:17pm PDT</time>
+           </p></div></blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+  <div id = 'twitter'>
+  </div>
+  <div class = 'twitter2'>
+    @Twitter
+  </div>
 </div>
 <div id = 'experience'>
 </div>
@@ -72,27 +118,6 @@
 <div class='twitterparagraph'>
   Founded in 2006, Twitter goes by the mission statement of
   giving everyone the power to create and share ideas and information instantly, without barriers.
-</div>
-<div id="instagram_holder">
-  <div>
-    {% for picture in collection %}
-      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4"
-      style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
-      margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-      <div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;">
-        <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC);
-        display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;">
-           <a href="{{ picture }}" style=" color:#000;
-           font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;
-           text-decoration:none; word-wrap:break-word;" target="_top">💐 in our hearts, 💐 in our boots. #freepeople</a></p> <p style="
-           color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0;
-           margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center;
-           text-overflow:ellipsis; white-space:nowrap;">A photo posted by freepeople (@freepeople) on <time style=" font-family:Arial,sans-serif;
-           font-size:14px; line-height:17px;" datetime="2015-07-28T23:17:47+00:00">Jul 28, 2015 at 4:17pm PDT</time>
-         </p></div></blockquote>
-    {% endfor %}
-  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-  </div>
 </div>
 <div id = 'aboutus'>
 </div>
