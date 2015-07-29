@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html id = 'everything'>
+<html>
 <head> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src= "https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css"href="stylesheets/drop.css">
 <!-- <script src="/javascript/AboutMe.js" ></script> -->
 <title>Drop</title> 
-<div class = "page">
-<div id = "navBar">
-  <div class="navTab" id = "teardrop" >
-    <a href ='#top'>
-      <img  src='/images/TearDrop.png'>
-    </a>
-    </div>
-
-  <div class="navTab"  id= 'about'>About</div>
-  <div class="navTab" ><a href = "#twitter">Twitter<a></div>
-  <div class="navTab" >YouTube</div>
-  <div class="navTab" >Instagram</div>
-  <div class="navTab" ><a href = '#experience'>Experience it</a></div>
-  <div class="navTab" ><a href ='#info'>What's Drop?</a></div>
-  <div class="navTab" id= "drop"><a href ='#top'>Drop</a></div>
-</div>
-</div>
 </head> 
 <body>
+  <div class = "page">
+  <div id = "navBar">
+    <div class="navTab" id = "teardrop" >
+      <a href ='#top'>
+        <img  src='/images/TearDrop.png'>
+      </a>
+      </div>
+
+    <div class="navTab" ><a href = '#aboutus'>About</a></div>
+    <div class="navTab" ><a href = "#twitter">Twitter</a></div>
+    <div class="navTab" >YouTube</div>
+    <div class="navTab" >Instagram</div>
+    <div class="navTab" ><a href = '#experience'>Experience it</a></div>
+    <div class="navTab" ><a href ='#info'>What's Drop?</a></div>
+    <div class="navTab" id= "drop">  <a href ='#top'>Drop</a></div>
+  </div>
+  </div>
 <div class = 'page' id = "top">
     <div class = 'welcomeWrapper'>
       <img id = 'water' src="/images/water.jpg">
@@ -59,7 +59,7 @@
   <div class = 'twitter2'>
     @Twitter
   </div>
-<div class='paragraph2'>
+<div class='twitterparagraph'>
   Founded in 2006, Twitter goes by the mission statement of
   giving everyone the power to create and share ideas and information instantly, without barriers.
 </div>
@@ -82,6 +82,36 @@
   {% endfor %}
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 </p>
-
+<div id = 'aboutus'>
+</div>
+<div class = 'thedevelopers'>
+  <div class='developers'>About the Developers</div>
+    <!-- <div class = 'devpics'> -->
+      <div class= 'devpics'id = 'bryan'><img src='/images/bryan.jpg'></div>
+      <div class= 'devpics'id = 'amber'><img src='/images/amber.jpg'></div>
+      <div class= 'devpics'id = 'shuying'><img src='/images/shuying.jpg'></div>
+    <!-- </div> -->
+  <div class='developernames'>Bryan Polanco
+    <div id='devparagraphs'>
+      From Amarillo Texas, Bryan will be attending the University of Texas at
+      Austin to be majoring in computer science. He attended Caprock High School
+      and is really happy to be a part of CSSI Seattle!
+    </div>
+  </div>
+  <div class='developernames'>Amber Jaitrong
+    <div id='devparagraphs'>
+      From Denver Colorado, Amber will be attending the California Polytechnic
+      State University to be majoring in electrical engineering. She attended Regis Jesuit
+      High School and is really happy to be a part of CSSI Seattle!
+    </div>
+  </div>
+  <div class='developernames'>Shu Ying Liang
+    <div id='devparagraphs'>
+      From Seattle Washington, Shu Ying will be attending the University of Washington
+      in Seattle to be majoring in computer science. She attended Garfield High School
+      and is really happy to be a part of CSSI Seattle!
+    </div>
+  </div>
+</div>
 </body> 
 <html>
