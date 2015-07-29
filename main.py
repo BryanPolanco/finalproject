@@ -29,7 +29,7 @@ class MainHandler(webapp2.RequestHandler):
 class InstaHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja2_environment.get_template('Templates/drop.html')
-        counter = 2
+        counter = 10
         url = ('https://api.instagram.com/v1/users/self/media/recent?'
             'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b&count=%s' %(counter))
         collection = [ ]
