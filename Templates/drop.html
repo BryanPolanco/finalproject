@@ -18,8 +18,8 @@
   <div class="navTab" ><a href = "#twitter">Twitter<a></div>
   <div class="navTab" >YouTube</div>
   <div class="navTab" >Instagram</div>
-  <div class="navTab" ><a href ='#facebook'>Facebook</a></div>
   <div class="navTab" ><a href = '#experience'>Experience it</a></div>
+  <div class="navTab" ><a href ='#info'>What's Drop?</a></div>
   <div class="navTab" id= "drop"><a href ='#top'>Drop</a></div>
 </div>
 </div>
@@ -33,30 +33,18 @@
       </div>
     </div>
 </div> 
-<div id = 'experience'>
+<div id = 'info'>
 </div>
 <div id = "letMe">
   Let me give you some background,
 </div>
 <div id = "paragraph">
-   Drop was a mere concept that that had been in development for the past 20 years, and now, the developers at Triple EPIC are proud to present the unveiling of the latest multi-use social media site. Together, Triple EPIC was able to create the groundbreaking website of Drop. After many years of adversity, obstacles, and challenges, Drop is now avaliable to the public. The developers say that it wasn't easy, but that they are proud of the outcome. Overall, the company is still famous for the slogan that they base all of their work off of. The ocean was created, with the start of a single drop.
+   Drop was a mere concept that that had been in development for the past 20 years,
+   and now, the developers at Triple EPIC are proud to present the unveiling of the latest multi-use social media site. Together, Triple EPIC was able to create the groundbreaking website of Drop. After many years of adversity, obstacles, and challenges, Drop is now avaliable to the public. The developers say that it wasn't easy, but that they are proud of the outcome. Overall, the company is still famous for the slogan that they base all of their work off of. The ocean was created, with the start of a single drop.
  </div>
- <div id = 'facebook'>
+ <div id = 'experience'>
  </div>
-<div class = 'facebook'>
-  Facebook
-
-
-
-
-
-</div>
-
-
-
-
-
-
+<div class = 'timeline'>
 <a class="twitter-timeline"
   href="https://twitter.com/Ambuerrs_J/lists/popular-users"
   data-widget-id="626074924570931200">Tweets from https://twitter.com/Ambuerrs_J/lists/popular-users</a>
@@ -64,8 +52,21 @@
   p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
     js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
     (document,"script","twitter-wjs");</script>
+  </div>
+
+  <div id = 'twitter'>
+  </div>
+  <div class = 'twitter2'>
+    @Twitter
+  </div>
+<div class='paragraph2'>
+  Founded in 2006, Twitter goes by the mission statement of
+  giving everyone the power to create and share ideas and information instantly, without barriers.
+</div>
 <p>
-  <img src="{{ picture }}">
+  {% for picture in link %}
+    <img src="{{ picture }}">
+  {% endfor %}
 </p>
 
 </body> 
