@@ -103,8 +103,8 @@
   height: 75px;
 }
 .instagram2{
-  font-size: 40pt;
-  font-family: Helvetica Neue;
+  /*font-size: 40pt;
+  font-family: Helvetica Neue;*/
   text-align: center;
   border-bottom: 1px solid grey;
 }
@@ -112,7 +112,7 @@
   width: 40%;
 }
 .instaparagraph{
-  margin-bottom: 40%;
+  /*margin-bottom: 40%;*/
   padding-top: 5%;
   font-size: 25px;
   font-family: Helvetica Neue;
@@ -126,12 +126,17 @@
   height: 75px;
 }
 .youtube2{
-  font-size: 40pt;
-  font-family: Helvetica Neue;
+  /*font-size: 40pt;
+  font-family: Helvetica Neue;*/
   text-align: center;
+  border-bottom: 1px solid grey;
+}
+#tubenamepic{
+  width:20%;
+  /*border: 1px solid red;*/
 }
 .youtubeparagraph{
-  margin-bottom: 40%;
+  /*margin-bottom: 40%;*/
   padding-top: 5%;
   font-size: 25px;
   font-family: Helvetica Neue;
@@ -145,12 +150,19 @@
   height: 75px;
 }
 .twitter2{
-  font-size: 40pt;
-  font-family: Helvetica Neue;
+  /*font-size: 40pt;
+  font-family: Helvetica Neue;*/
   text-align: center;
+  border-bottom: 1px solid grey;
+}
+#twitterlogopic{
+  width:7%;
+}
+#twitterpic{
+  width:27%;
 }
 .twitterparagraph{
-  margin-bottom: 40%;
+  /*margin-bottom: 40%;*/
   padding-top: 5%;
   font-size: 25px;
   font-family: Helvetica Neue;
@@ -167,6 +179,9 @@
   font-size: 40pt;
   font-family: Helvetica Neue;
   text-align: center;
+}
+#soundpic{
+  width:25%;
 }
 .soundcloudparagraph{
   padding-top: 5%;
