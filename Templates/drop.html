@@ -11,18 +11,26 @@
 <body>
 <div class = "page">
   <div id = "navBar">
-    <div class="navTab" id = "teardrop" >
-      <a href ='#top'>
-        <img  src='/images/TearDrop.png'>
-      </a>
-    </div>
-    <div class="navTab" ><a href = '#aboutus'>About</a></div>
+
+    <div class="navTab" ><a href = '{{logout}}' action = "/">Sign Out</a></div>
+    <div class="navTab" id= 'about2'><a href = '#aboutus'>About</a></div>
     <div class="navTab" ><a href = "#twitter">Twitter</a></div>
     <div class="navTab" >YouTube</div>
     <div class="navTab" >Instagram</div>
-    <div class="navTab" ><a href = '#experience'>Experience it</a></div>
-    <div class="navTab" ><a href ='#info'>What's Drop?</a></div>
-    <div class="navTab" id= "drop"><a href ='#top'>Drop</a></div>
+    <div class="navTab" id = 'experience2'><a href = '#experience'>Experience it</a></div>
+    <div class="navTab" id = 'info2'><a href ='#info'>What's Drop?</a></div>
+
+
+  <div class = 'navTab1'>
+    <div  id= "drop"><a href ='#top'>Drop</a></div>
+    <div  id = "teardrop" >
+        <a href ='#top'>
+        <img  id = 'droppic' src='/images/TearDrop.png'>
+      </a>
+    </div>
+
+  </div>
+
   </div>
 </div>
 <div class = 'page' id = "top">
@@ -33,24 +41,6 @@
     </div>
   </div>
 </div> 
-<div id="results">
-  </br>
-  <div id="buttons">
-    <form action = "/" method = "GET">
-      <input name = "query" placeholder ='keyword' type="text"/>
-      <input id="search" type = "submit" value = "search"/>
-    </form>
-  </div>
-  </br>
-  <div>
-    {% for cool_video in video_collection %}
-    <iframe id="ytplayer" type="text/html" width="400" height="300"
-        src="https://www.youtube.com/embed/{{ cool_video.id.videoId }}?autoplay=0" frameborder="0">
-    </iframe>
-    {% endfor %}
-  </div>
-
-</div>
 <div id = 'info'>
 </div>
 <div id = "letMe">
@@ -62,36 +52,57 @@
  </div>
  <div id = 'experience'>
  </div>
- <div id = "social_media_lines">
-  <div class = 'timeline'>
-    <a class="twitter-timeline"
-      href="https://twitter.com/Ambuerrs_J/lists/popular-users"
-      data-widget-id="626074924570931200">Tweets from https://twitter.com/Ambuerrs_J/lists/popular-users</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
-      p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
-        js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
-        (document,"script","twitter-wjs");</script>
-  </div>
-  <div id="instagram_holder">
-    <div>
-      {% for picture in collection %}
-        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4"
-        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
-        margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-        <div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;">
-          <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC);
-          display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;">
-             <a href="{{ picture }}" style=" color:#000;
-             font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;
-             text-decoration:none; word-wrap:break-word;" target="_top">💐 in our hearts, 💐 in our boots. #freepeople</a></p> <p style="
-             color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0;
-             margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center;
-             text-overflow:ellipsis; white-space:nowrap;">A photo posted by freepeople (@freepeople) on <time style=" font-family:Arial,sans-serif;
-             font-size:14px; line-height:17px;" datetime="2015-07-28T23:17:47+00:00">Jul 28, 2015 at 4:17pm PDT</time>
-           </p></div></blockquote>
-      {% endfor %}
+<div id="ultimate_social">
+  <div id = "social_media_lines">
+    <div class = 'timeline'>
+      <a class="twitter-timeline"
+        href="https://twitter.com/Ambuerrs_J/lists/popular-users"
+        data-widget-id="626074924570931200">Tweets from https://twitter.com/Ambuerrs_J/lists/popular-users</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+        p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
+          js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
+          (document,"script","twitter-wjs");</script>
+    </div>
+    <div id="instagram_holder">
+      <div>
+        {% for picture in collection %}
+          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4"
+          style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+          margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+          <div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;">
+            <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC);
+            display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;">
+               <a href="{{ picture }}" style=" color:#000;
+               font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;
+               text-decoration:none; word-wrap:break-word;" target="_top">Please await amazing images!</a></p> <p style="
+               color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0;
+               margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center;
+               text-overflow:ellipsis; white-space:nowrap;"> <time style=" font-family:Arial,sans-serif;
+               font-size:14px; line-height:17px;" datetime="2015-07-28T23:17:47+00:00"></time>
+             </p></div></blockquote>
+        {% endfor %}
+      </div>
+    </div>
+    <div id="results">
+      </br>
+      <div id="buttons">
+        <form action = "/drop" method = "GET">
+          <input name = "query" placeholder ='keyword' type="text"/>
+          <input id="search" type = "submit" value = "search"/>
+        </form>
+      </div>
+      </br>
+      <div>
+        {% for cool_video in video_collection %}
+        <iframe id="ytplayer" type="text/html" width="300px" height="300"
+            src="https://www.youtube.com/embed/{{ cool_video.id.videoId }}?autoplay=0" frameborder="0">
+        </iframe>
+        {% endfor %}
+      </div>
     </div>
   </div>
+  <iframe width="910px" height="300" scrolling="yes" frameborder="no"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/129820318&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 </div>
   <div id = 'twitter'>
   </div>
