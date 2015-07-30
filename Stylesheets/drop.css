@@ -12,12 +12,9 @@
   position:fixed;
   z-index: 3;
 }
-/*.navTab1 > div {
-  display: inline-block;
-}*/
 .navTab{
   /*border: 1px solid red;*/
-  width: 10%;
+  width: 8%;
   height: 50%;
   float:right;
   overflow: auto;
@@ -102,6 +99,48 @@
 #experience{
   height: 100px;
 }
+#instagram{
+  height: 75px;
+}
+.instagram2{
+  font-size: 40pt;
+  font-family: Helvetica Neue;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+#instagrampic{
+  width: 40%;
+}
+.instaparagraph{
+  margin-bottom: 40%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+#youtube{
+  height: 75px;
+}
+.youtube2{
+  font-size: 40pt;
+  font-family: Helvetica Neue;
+  text-align: center;
+}
+.youtubeparagraph{
+  margin-bottom: 40%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
 #twitter{
   height: 75px;
 }
@@ -112,6 +151,24 @@
 }
 .twitterparagraph{
   margin-bottom: 40%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+#soundcloud{
+  height: 75px;
+}
+.soundcloud2{
+  font-size: 40pt;
+  font-family: Helvetica Neue;
+  text-align: center;
+}
+.soundcloudparagraph{
   padding-top: 5%;
   font-size: 25px;
   font-family: Helvetica Neue;
