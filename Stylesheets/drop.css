@@ -6,18 +6,13 @@
   border-bottom: 1px solid grey;
   overflow: auto;
   width: 101.5%;
-  /*padding-bottom: 100px;*/
   height: 10%;
   background-color: white;
   position:fixed;
   z-index: 3;
 }
-/*.navTab1 > div {
-  display: inline-block;
-}*/
 .navTab{
-  /*border: 1px solid red;*/
-  width: 10%;
+  width: 8%;
   height: 50%;
   float:right;
   overflow: auto;
@@ -28,37 +23,25 @@
   padding-right: 2%;
 }
 .navTab1{
-  /*border: 1px solid red;*/
   float: right;
   white-space: nowrap;
   margin-right: 10%;
-  /*padding-top: 2%;*/
-
 }
 .navTab1 > div{
   display: inline-block;
-
 }
 #teardrop img {
-  /*border: 1px solid blue;*/
-  /*position: absolute;*/
   height:30px;
   padding-top: 30px;
-  /*left:15%;*/
-  /*top: 37%;*/
 }
 #drop{
-  /*border: 1px solid blue;*/
   font-size: 190%;
   color: black;
   font-family: Helvetica Neue;
-  /*padding-top: 2.25%;*/
   font-weight: bolder;
-  /*padding-right: 10.25%;*/
 }
 .page{
   height: 100%;
-  /*overflow:auto;*/
   margin: -10px;
 }
 #water{
@@ -66,7 +49,6 @@
   width: 1283px;
 }
 .welcome{
-  /*border: 1px solid purple;*/
   font-family: Helvetica Neue;
   font-size: 250%;
   color: black;
@@ -76,12 +58,12 @@
   top: 41%;
   left: 39%;
 }
+/*Start of a new page----------------*/
 #info{
   height: 50px;
 }
 #letMe{
   margin-top: 7%;
-  /*border: 1px solid red;*/
   font-size: 40px;
   font-family: Helvetica Neue;
   font-weight: normal;
@@ -99,98 +81,15 @@
   line-height: 60px;
   text-align: center;
 }
+/*Start of a new page-----------------*/
 #experience{
   height: 100px;
 }
-#twitter{
-  height: 75px;
-}
-.twitter2{
-  font-size: 40pt;
-  font-family: Helvetica Neue;
-  text-align: center;
-}
-.twitterparagraph{
-  margin-bottom: 40%;
-  padding-top: 5%;
-  font-size: 25px;
-  font-family: Helvetica Neue;
-  font-weight: 200;
-  color: grey;
-  letter-spacing: 2px;
-  line-height: 60px;
-  text-align: center;
-}
-#aboutus{
-  height: 75px;
-}
-.developers{
-  font-family: Helvetica Neue;
-  font-weight: normal;
-  font-size: 40pt;
-  text-align: center;
-  border-bottom: 1px solid grey;
-}
-/*#amber{
-  border: 1px solid grey;
-}*/
-.allbios{
-  /*border: 1px solid red;*/
-  text-align: center;
-}
-.allbios > div {
-  display: inline-block;
-}
-.bryan{
-  /*border: 1px solid blue;*/
-  width: 31%;
-}
-.amber{
-  width: 31%;
-  /*border: 1px solid blue;*/
-}
-.shuying{
-  width: 30%;
-  /*border: 1px solid blue;*/
-}
-.devpics img{
-  height: 200px;
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  float: left;
-}
-.developernames{
-  /*border: 1px solid blue;*/
-  font-family: Helvetica Neue;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-#devparagraphs{
-  padding-top: 5%;
-  padding-bottom: 20%;
-  font-weight: lighter;
-  color: grey;
-  font-size: 13pt;
-  line-height: 30px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-a:link {
-    text-decoration: none;
-    color:inherit;
-}
-a:visited {
-  color:inherit;
-  text-decoration: none;
-}
 #instagram_holder{
   height: 600px;
-    width: 300px;
-    margin: 0%;
-    overflow: auto;
+  width: 300px;
+  margin: 0%;
+  overflow: auto;
 }
 #results{
   height: 600px;
@@ -233,4 +132,154 @@ input[type="text"]{
 input[type=submit]{
   font-family: Helvetica Neue;
   font-weight: bold;
+}
+/*Start of a new page---------------*/
+#instagram{
+  height: 140px;
+}
+.instagram2{
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+#instagrampic{
+  width: 40%;
+}
+.instaparagraph{
+  margin-bottom: 10%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+/*Start of a new page----------------*/
+#youtube{
+  height: 140px;
+}
+.youtube2{
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+#tubenamepic{
+  width:20%;
+}
+.youtubeparagraph{
+  margin-bottom: 10%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+/*Start of a new page----------------*/
+#twitter{
+  height: 140px;
+}
+.twitter2{
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+#twitterlogopic{
+  width:7%;
+}
+#twitterpic{
+  width:27%;
+}
+.twitterparagraph{
+  margin-bottom: 10%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+/*Start of a new page----------------*/
+#soundcloud{
+  height: 140px;
+}
+.soundcloud2{
+  border-bottom:1px solid grey;
+  text-align: center;
+}
+#soundpic{
+  width:25%;
+}
+.soundcloudparagraph{
+  margin-bottom: 10%;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  color: grey;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+/*Start of a new page----------------*/
+#aboutus{
+  height: 75px;
+}
+.developers{
+  font-family: Helvetica Neue;
+  font-weight: normal;
+  font-size: 40pt;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+.allbios{
+  text-align: center;
+}
+.allbios > div {
+  display: inline-block;
+}
+.bryan{
+  width: 31%;
+}
+.amber{
+  width: 31%;
+}
+.shuying{
+  width: 30%;
+}
+.devpics img{
+  height: 200px;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  float: left;
+}
+.developernames{
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#devparagraphs{
+  padding-top: 5%;
+  padding-bottom: 20%;
+  font-weight: lighter;
+  color: grey;
+  font-size: 13pt;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/*Start of a new page----------------*/
+a:link {
+  text-decoration: none;
+  color:inherit;
+}
+a:visited {
+  color:inherit;
+  text-decoration: none;
 }
