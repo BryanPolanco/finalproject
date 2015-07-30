@@ -38,9 +38,9 @@ class LoginHandler(webapp2.RequestHandler):
         user = users.get_current_user()
         greeting = ('<a href = "%s">Sign in or register</a>.' %
             users.create_login_url('/drop'))
-        self.response.write('<html><body>%s</body></html>' % greeting)
+        logindictionary = {'greeting':greeting}
         template = JINJA_ENVIRONMENT.get_template('Templates/sign_in.html')
-        self.response.write(template.render())
+        self.response.write(template.render(logindictionary))
 
 class MainHandler(webapp2.RequestHandler):
     request_video_count = ''
