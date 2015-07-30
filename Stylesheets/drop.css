@@ -133,7 +133,7 @@
   text-align: left;
   width: 200px;
 }
-#search, #submit_count{
+#search, #submit_video_count,#submit_instagram_count{
   width:55px;
 }
 input[type="text"]{
