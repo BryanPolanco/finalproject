@@ -51,7 +51,7 @@ $("document").ready(function() {
       $('#youtube2').click(function(){
 
       $('html, body').animate({
-        scrollTop: $("#youtube").offset().top
+        scrollTop: $("#youtube3").offset().top
       }, 1000);
 
      });
