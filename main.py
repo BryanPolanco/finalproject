@@ -43,7 +43,20 @@ class LoginHandler(webapp2.RequestHandler):
         self.response.write(template.render())
 
 class MainHandler(webapp2.RequestHandler):
+    request_video_count = ''
+    request_image_count = ''
+
+    def post(self):
+        request_video_count = self.request.get('v_count')
+        if not request_video_count:
+            request_video_count = '3'
+        request_image_count = self.request.get('i_count')
+        if not request_image_count:
+            request_image_count = '5'
+        self._getdata(request_video_count,request_image_count)
     def get(self):
+        self._getdata('3','5')
+    def _getdata(self,request_video_count,request_image_count):
         user = users.get_current_user()
 
         template = JINJA_ENVIRONMENT.get_template('Templates/drop.html')
@@ -62,7 +75,7 @@ class MainHandler(webapp2.RequestHandler):
 
             videos = []
             video_collection = []
-            video_count = 3
+            video_count = int(request_video_count)
             for search_result in search_response.get("items", []):
                 videos.append(search_result)
             for vid in range(video_count):
@@ -70,7 +83,7 @@ class MainHandler(webapp2.RequestHandler):
                 cool_video = videos[randomindex]
                 video_collection += [cool_video]
             #now is instagram
-            counter = 4
+            counter = int(request_image_count)
             url = ('https://api.instagram.com/v1/media/popular?'
                 'access_token=145068709.1fb234f.d0a68e4a96fd44fba1b9082101de0e3b')
             collection = [ ]

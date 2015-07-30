@@ -13,10 +13,10 @@
   <div id = "navBar">
   <div class="navTab" ><a href = '{{logout}}' action = "/">Sign Out</a></div>
     <div class="navTab" id= 'about2'><a href = '#aboutus'>About</a></div>
-    <div class="navTab" ><a href = "#soundcloud">Soundcloud</a></div>
-    <div class="navTab" ><a href = "#twitter">Twitter</a></div>
-    <div class="navTab" ><a href = "#youtube">YouTube</a></div>
-    <div class="navTab" ><a href = "#instagram">Instagram</a></div>
+    <div class="navTab" id = 'soundcloud2'><a href = "#soundcloud">Soundcloud</a></div>
+    <div class="navTab" id = 'twitter2'><a href = "#twitter">Twitter</a></div>
+    <div class="navTab" id = 'youtube2'><a href = "#youtube">YouTube</a></div>
+    <div class="navTab" id = 'instagram2'><a href = "#instagram">Instagram</a></div>
     <div class="navTab" id = 'experience2'><a href = '#experience'>Experience it</a></div>
     <div class="navTab" id = 'info2'><a href ='#info'>What's Drop?</a></div>
 <div class = 'navTab1'>
@@ -85,8 +85,19 @@
       </br>
       <div id="buttons">
         <form action = "/drop" method = "GET">
-          <input name = "query" placeholder ='keyword' type="text"/>
-          <input id="search" type = "submit" value = "search"/>
+          <input id = "youtube" name = "query" placeholder ='keyword' type="text"/>
+          <input id="search" type = "submit" value = "Search"/>
+        </form>
+      </br>
+        <form action = "/drop" method = "POST">
+          <input id="count_video" type = "text" placeholder = "Number of videos you wish to see"
+            name="v_count"/>
+          </br>
+          <input id="secret" type="text" style="border:none" readonly="readonly">
+          <input id="submit_count" type = "submit" value = "Fetch"/>
+          </br>
+          <input id="count_image" type = "text" placeholder = "Number of images you wish to see"
+            name="i_count"/>
         </form>
       </div>
       </br>
@@ -105,7 +116,6 @@
 <!-- This is where a new page starts ------------------------>
 <div id='instagram'>
 </div>
-
 <div class = 'instagram2'>
   <img  id ='instagrampic'src = '/images/instagram.png'>
 </div>
@@ -129,7 +139,6 @@
   videos to their channels. Also, when the videos hit a certain number of views, uploader
   are able to receive a bonus from YouTube.
 </div>
-
 <!-- This is where a new page starts ------------------------>
   <div id = 'twitter'>
   </div>
@@ -146,7 +155,6 @@
   most visited websites.
 </div>
 <!-- This is where a new page starts ------------------------>
-
 <div id='soundcloud'>
 </div>
 <div class = 'soundcloud2'>
@@ -199,7 +207,5 @@
 </div>
 </div>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-
 </body> 
-
 <html>
