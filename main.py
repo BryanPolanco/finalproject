@@ -44,7 +44,7 @@ class LoginHandler(webapp2.RequestHandler):
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        # user = users.get_current_user()
+        user = users.get_current_user()
         # greeting = ('Welcome, %s! (<a href=%s>sign_out</a>)' %
         #     (user.nickname(), users.create_logout_url('/')))
         # self.response.write('<html><body>%s</body></html>' % greeting)

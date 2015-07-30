@@ -86,9 +86,6 @@
 #experience{
   height: 100px;
 }
-.timeline{
-  width: 400px;
-}
 #twitter{
   height: 75px;
 }
@@ -175,16 +172,25 @@ a:visited {
 }
 #instagram_holder{
   height: 600px;
-    width: 400px;
-    margin: 8%;
+    width: 300px;
+    margin: 0%;
     overflow: auto;
 }
 #results{
   height: 600px;
-  width: 400px;
-  margin: 8%;
+  width: 300px;
+  margin: 0%;
+  overflow: auto;
+}
+.timeline{
+  width: 300px;
+  margin: 0%;
   overflow: auto;
 }
 #social_media_lines > div{
   display: inline-block;
+}
+#social_media_lines{
+  height: 800px;
+  text-align: center;
 }
