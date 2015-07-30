@@ -87,8 +87,19 @@
       </br>
       <div id="buttons">
         <form action = "/drop" method = "GET">
-          <input name = "query" placeholder ='keyword' type="text"/>
-          <input id="search" type = "submit" value = "search"/>
+          <input id = "youtube" name = "query" placeholder ='keyword' type="text"/>
+          <input id="search" type = "submit" value = "Search"/>
+        </form>
+      </br>
+        <form action = "/drop" method = "POST">
+          <input id="count_video" type = "text" placeholder = "Number of videos you wish to see"
+            name="v_count"/>
+          </br>
+          <input id="secret" type="text" style="border:none" readonly="readonly">
+          <input id="submit_count" type = "submit" value = "Fetch"/>
+          </br>
+          <input id="count_image" type = "text" placeholder = "Number of images you wish to see"
+            name="i_count"/>
         </form>
       </div>
       </br>

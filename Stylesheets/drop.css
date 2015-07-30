@@ -216,3 +216,21 @@ a:visited {
   height:1000px;
   text-align: center;
 }
+#buttons{
+  text-align: left;
+  font-family: Helvetica Neue;
+}
+#count_image, #count_video,#youtube,#secret{
+  text-align: left;
+  width: 200px;
+}
+#search, #submit_count{
+  width:55px;
+}
+input[type="text"]{
+  font-family: Helvetica Neue;
+}
+input[type=submit]{
+  font-family: Helvetica Neue;
+  font-weight: bold;
+}
