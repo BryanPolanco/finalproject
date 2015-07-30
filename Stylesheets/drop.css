@@ -116,6 +116,7 @@
   font-weight: normal;
   font-size: 40pt;
   text-align: center;
+  border-bottom: 1px solid grey;
 }
 /*#amber{
   border: 1px solid grey;

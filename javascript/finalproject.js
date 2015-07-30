@@ -32,4 +32,12 @@ $("document").ready(function() {
 
         });
 
+        $('#about2').click(function(){
+
+        $('html, body').animate({
+          scrollTop: $("#aboutus").offset().top
+        }, 1000);
+
+       });
+
 });
