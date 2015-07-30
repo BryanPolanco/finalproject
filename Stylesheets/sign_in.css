@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: "HelveticaNeue-Thin.otf"
+}
+body{
+  text-align: center;
+  background-image: url(/images/ink.jpg);
+  background-size: cover;
+  width: 100%;
+}
+a {
+  padding: 1em;
+  font-size: 57px;
+  background: rgba(25, 25, 25, .6);
+  font-family: Helvetica Neue;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.9;
+  text-decoration: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+/* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.15s ease-in-out;
+
+}
+a:hover{
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+}

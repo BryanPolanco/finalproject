@@ -5,8 +5,9 @@
 #navBar{
   border-bottom: 1px solid grey;
   overflow: auto;
-  width: 101.5%;
-  height: 10%;
+  width: 103%;
+  height: 11%;
+  margin-top: -1%;
   background-color: white;
   position:fixed;
   z-index: 3;
@@ -25,10 +26,11 @@
 .navTab1{
   float: right;
   white-space: nowrap;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 .navTab1 > div{
   display: inline-block;
+
 }
 #teardrop img {
   height:30px;
@@ -42,21 +44,29 @@
 }
 .page{
   height: 100%;
-  margin: -10px;
+  margin-left: -40px;
+  margin-right: -8px;
 }
 #water{
   margin-top: 4.5%;
   width: 100%;
 }
 .welcome{
+  height: 635px;
+  text-align: center;
+  line-height: 325px;
+  padding-top: 10%;
   font-family: Helvetica Neue;
   font-size: 250%;
   color: black;
   font-weight:100;
-  position: absolute;
-  z-index: ;
-  top: 41%;
-  left: 39%;
+  /*position: relative;*/
+  /*top: 41%;
+  left: 39%;*/
+  background-image: url(/images/water.jpg);
+  /*background-repeat: no-repeat;*/
+  background-size:100% 100%;
+  background-position: center;
 }
 /*Start of a new page----------------*/
 #info{
