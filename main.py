@@ -39,7 +39,7 @@ class LoginHandler(webapp2.RequestHandler):
         greeting = ('<a href = "%s">Sign in or register</a>.' %
             users.create_login_url('/drop'))
         self.response.write('<html><body>%s</body></html>' % greeting)
-        template = JINJA_ENVIRONMENT.get_template('sign_in.html')
+        template = JINJA_ENVIRONMENT.get_template('Templates/sign_in.html')
         self.response.write(template.render())
 
 class MainHandler(webapp2.RequestHandler):

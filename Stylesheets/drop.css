@@ -46,7 +46,7 @@
 }
 #water{
   margin-top: 4.5%;
-  width: 1283px;
+  width: 100%;
 }
 .welcome{
   font-family: Helvetica Neue;
@@ -156,7 +156,7 @@ input[type=submit]{
   text-align: center;
 }
 /*Start of a new page----------------*/
-#youtube{
+#youtube3{
   height: 140px;
 }
 .youtube2{
