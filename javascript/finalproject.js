@@ -1,27 +1,35 @@
 $("document").ready(function() {
 
-				$('.top-title').click(function(){
+				$('#info2').click(function(){
 
 					$('html, body').animate({
-						scrollTop: $(".middle").offset().top
-					}, 2000);
+						scrollTop: $("#info").offset().top
+					}, 1000);
 
 				 });
 
-				$('.middle-title').click(function(){
+				$('#experience2').click(function(){
 
 					$('html, body').animate({
-						scrollTop: $(".bottom").offset().top
-					}, 2000);
+						scrollTop: $("#experience").offset().top
+					}, 1000);
 
 				 });
 
-					$('.bottom-title').click(function(){
+					$('#drop').click(function(){
 
 					$('html, body').animate({
-						scrollTop: $(".top").offset().top
-					}, 2000);
+						scrollTop: $("#top").offset().top
+					}, 1000);
 
 				 });
+
+         $('#droppic').click(function(){
+
+         $('html, body').animate({
+           scrollTop: $("#top").offset().top
+         }, 1000);
+
+        });
 
 });
